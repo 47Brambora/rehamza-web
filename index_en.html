@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hlavicka">
+    <a href="index.html" class="logo">
+        <img src="rehamza logo.png" alt="Logo">
+    </a>
+
+    <nav class="menu">
+        <a href="javascript:void(0)" onclick="scrollToSection('uvod')">Home</a>
+        <a href="javascript:void(0)" onclick="scrollToSection('jak-to-funguje')">How it works</a>
+        <a href="javascript:void(0)" onclick="scrollToSection('o-nas')">About Us</a>
+        <a href="javascript:void(0)" onclick="scrollToSection('projekty')">Projects</a>
+        <a href="javascript:void(0)" onclick="scrollToSection('reference')" style="color: #008f7a; text-decoration: none; font-weight: bold; font-family: Arial, sans-serif; padding-bottom: 5px; border-bottom: 2px solid transparent; transition: border-bottom 0.3s ease; line-height: 1.5; display: flex; align-items: center;">References</a>
+
+        <a href="tel:+420737326541" class="phone-link">+420 737 326 541</a>
+        <a href="javascript:void(0)" onclick="scrollToSection('kontakty')" class="kontakt-button">Contact</a>
+        
+        <div class="jazyky">
+            <a href="index.html" class="lang-link">CZ</a> | 
+            <a href="index_en.html" class="lang-link">EN</a>
+        </div>
+    </nav>
+</header>
+    <main>
+        <!-- SECTION: Home/Hero -->
+        <section class="hero" id="uvod">
+            <h1 class="hero-title">BrainCoach</h1>
+            <p class="hero-subtitle">When rehabilitation becomes fun</p>
+            <p class="hero-description">Unique software for memory support and fine motor skills that combines medical expertise with enjoyment. <br>
+                 Ideal for brain training and rehabilitation after injuries or illnesses.</p>
+            <p style="color: #ffffff; font-size: 18px; margin-top: 40px; max-width: 700px;">We are creators of innovative solutions for neurorehabilitation. Our approach combines the latest scientific research with modern technology to provide patients with the best possible options for recovery and improvement of their cognitive and motor functions.</p>
+        </section>
+
+        <!-- SECTION: How it works -->
+        <section class="section section-green" id="jak-to-funguje">
+            <div class="container">
+                <h2 class="section-title">How it works</h2>
+                <p class="section-text">Our system is designed with maximum simplicity and efficiency. Here are the steps to begin your journey to better health.</p>
+                <div class="steps steps-left">
+                    <div class="step">
+                        <h3>Diagnostics</h3>
+                        <p>We start with a detailed assessment of your cognitive functions using modern tests and examinations.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Personal program</h3>
+                        <p>We create a program tailored specifically to your needs and rehabilitation goals.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Regular exercises</h3>
+                        <p>You exercise at home or online under our expert supervision with regular check-ups.</p>
+                    </div>
+                </div>
+                <p class="section-text" style="margin-top: 60px;">Every exercise is specially designed to be both effective and enjoyable. Our software automatically adapts the difficulty level based on your progress.</p>
+            </div>
+        </section>
+
+        <!-- SECTION: About Us -->
+        <section class="section section-orange" id="o-nas">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-text">We are a team of experts dedicated to neurorehabilitation and digital transformation of healthcare.</p>
+                <div class="features">
+                    <div class="feature">
+                        <h3> Experts in the field</h3>
+                        <p>Neurologists, physiotherapists and psychologists with years of experience in rehabilitation and patient care.</p>
+                    </div>
+                    <div class="feature">
+                        <h3> Personal approach</h3>
+                        <p>We view each patient individually and tailor care to their specific needs and goals.</p>
+                    </div>
+                    <div class="feature">
+                        <h3> Innovation and science</h3>
+                        <p>We constantly seek new ways to improve the quality of our services based on the latest research.</p>
+                    </div>
+                </div>
+                <p class="section-text" style="margin-top: 60px;">Our contribution between healthcare and technology is developing solutions that truly help people return to active and quality lives. We believe that the right combination of care and technology can change lives.</p>
+            </div>
+        </section>
+
+        <!-- SECTION: Projects -->
+        <section class="section section-green" id="projekty">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-text">Portfolio of our successful projects that help people around the world.</p>
+                <div class="features features-column">
+                    <div class="feature">
+                        <h3>BrainCoach Software</h3>
+                        <p>A comprehensive solution for neurorehabilitation with interactive exercises designed for patients recovering from brain disease and injuries.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Web Design & Development</h3>
+                        <p>Modern and responsive web design for healthcare facilities, clinics and rehabilitation centers.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Consulting Services</h3>
+                        <p>Expert advice on digital transformation of healthcare services and implementation of new technologies.</p>
+                    </div>
+                </div>
+                <p class="section-text" style="margin-top: 60px;">All our projects are focused on one thing: improving patient care and facilitating their journey to recovery.</p>
+            </div>
+        </section>
+
+        <!-- SECTION: References -->
+        <section class="section section-orange" id="reference">
+            <div class="container">
+                <h2 class="section-title">References</h2>
+                <p class="section-text">Hear stories from our satisfied clients and patients who have returned to active lives thanks to our programs.</p>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <p>"BrainCoach helped me return to work after an injury. The exercises are fun and the results are visible."</p>
+                        <cite>- Marie K., 45 years old</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Great method for seniors. My grandmother looks forward to every exercise and notices visible improvement."</p>
+                        <cite>- John N., 60 years old</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"I was skeptical, but the results surprised me. The program is really well designed and motivating."</p>
+                        <cite>- Patricia L., 52 years old</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: Contact -->
+        <section class="section section-orange" id="kontakty">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-text">Do you have questions or want to learn more about our services? We are here for you and look forward to hearing from you!</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon-circle">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+                        </div>
+                        <h3>Address</h3>
+                        <p><strong>REHAMZA s.r.o.</strong><br>Havlíčkova 1053<br>537 01 Chrudim<br><br>ID: 06530702<br>registered at the Regional Court in Hradec Králové sp.<br>ref. C 40430</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-circle">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </div>
+                        <h3>Ing. Pavel Čáp</h3>
+                        <p>managing director<br><br>tel. <a href="tel:+420737326541">+420 737 326 541</a><br>e-mail: <a href="mailto:pavel.cap@rehamza.cz">pavel.cap@rehamza.cz</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-circle">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </div>
+                        <h3>Bc. Veronika Zďárská</h3>
+                        <p>expert consultant and business representative<br><br>tel. <a href="tel:+420773610892">+420 773 610 892</a><br>e-mail: <a href="mailto:veronika.zdarska@rehamza.cz">veronika.zdarska@rehamza.cz</a></p>
+                    </div>
+                </div>
+                <h3 style="font-size: 28px; font-weight: 700; margin-top: 60px; margin-bottom: 30px;">Write us a message</h3>
+                <form class="contact-form" action="https://formsubmit.co/pavel.cap@rehamza.cz" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>All rights reserved © 2025</p>
+                </div>
+                <div class="footer-center">
+                    <img src="rehamza logo.png" alt="Logo" class="footer-logo">
+                </div>
+                <div class="footer-right">
+                    <a href="https://www.facebook.com/SpolRehamza?mibextid=wwXIfr&rdid=aMMlQgyeJGCQFTr8&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F175mc3wrVq%2F%3Fmibextid%3DwwXIfr" target="_blank" class="social-icon facebook-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/rehamza_sro?igsh=MWtsdDU2c2Fudm80cA%3D%3D" target="_blank" class="social-icon instagram-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <rect x="2.15" y="2.15" width="19.7" height="19.7" rx="4.7" ry="4.7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="18.4" cy="5.6" r="0.9" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                const headerHeight = document.querySelector('.hlavicka').offsetHeight;
+                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = elementPosition - headerHeight - 20; // extra padding
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Fade-in efekt odstraněn
+    </script>
+
+</body>
+</html>

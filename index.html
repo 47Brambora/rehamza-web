@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hlavicka">
+    <a href="index.html" class="logo">
+        <img src="rehamza logo.png" alt="Logo">
+    </a>
+    <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="menu">
+        <a href="javascript:void(0)" onclick="scrollToSection('uvod')">Úvod</a>
+        <a href="javascript:void(0)" onclick="scrollToSection('jak-to-funguje')">Jak to funguje</a>
+        <a href="javascript:void(0)" onclick="scrollToSection('o-nas')">O nás</a>
+        <a href="javascript:void(0)" onclick="scrollToSection('projekty')">Projekty</a>
+        <a href="javascript:void(0)" onclick="scrollToSection('reference')" style="color: #008f7a; text-decoration: none; font-weight: bold; font-family: Arial, sans-serif; padding-bottom: 5px; border-bottom: 2px solid transparent; transition: border-bottom 0.3s ease; line-height: 1.5; display: flex; align-items: center;">Reference</a>
+        <a href="tel:+420737326541" class="phone-link">+420 737 326 541</a>
+        <a href="javascript:void(0)" onclick="scrollToSection('kontakty')" class="kontakt-button">Kontakt</a>
+        <div class="jazyky">
+            <a href="index.html" class="lang-link">CZ</a> | 
+            <a href="index_en.html" class="lang-link">EN</a>
+        </div>
+    </nav>
+</header>
+    <main>
+        <!-- SECTION: Úvod/Hero -->
+        <section class="hero" id="uvod">
+              <h1 class="hero-title">BrainCoach</h1>
+              <p class="hero-subtitle">Když rehabilitace baví</p>
+              <p class="hero-description">Unikátní software pro podporu paměti a jemné motoriky, který spojuje medicínskou odbornost se zábavou. <br>
+                  Ideální pro trénink mozku a také na rehabilitaci po úrazech či nemocech.</p>
+            
+        </section>
+
+        <!-- SECTION: Jak to funguje -->
+        <section class="section section-grey" id="jak-to-funguje">
+            <div class="container">
+                <h2 class="section-title">Jak to funguje</h2>
+                <p class="section-text">Náš systém je navržen s maximální jednoduchostí a efektivitou. Zde je krok za krokem, jak začít vaši cestu k lepšímu zdraví.</p>
+                <div class="steps steps-left">
+                    <div class="step">
+                        <h3>Diagnostika</h3>
+                        <p>Začínáme detailním posouzením vašich kognitivních funkcí pomocí moderních testů a vyšetření.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Osobní program</h3>
+                        <p>Vytvoříme program šitý přímo na míru vašim potřebám a cílům rehabilitace.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Pravidelné cvičení</h3>
+                        <p>Cvičíte doma nebo online pod naším odborným dohledem s pravidelnými checkupů.</p>
+                    </div>
+                </div>
+                <p class="section-text" style="margin-top: 60px;">Každé cvičení je speciálně navrženo tak, aby bylo efektivní a zároveň zábavné. Naš software automaticky adaptuje obtížnost na základě vašeho pokroku.</p>
+            </div>
+        </section>
+
+        <!-- SECTION: O nás -->
+        <section class="section" id="o-nas">
+            <div class="container">
+                <h2 class="section-title">O nás</h2>
+                <p class="section-text">Jsme tým odborníků, který se věnuje neurorehabilitaci a digitální transformaci zdravotnictví.</p>
+                <div class="features">
+                    <div class="feature">
+                        <h3> Experti v oboru</h3>
+                        <p>Neurologové, fyzioterapeuti a psychologové s dlouholetou praxí v rehabilitaci a péči o pacienty.</p>
+                    </div>
+                    <div class="feature">
+                        <h3> Osobní přístup</h3>
+                        <p>Každého pacienta vnímáme individuálně a přizpůsobujeme péči jeho konkrétním potřebám a cílům.</p>
+                    </div>
+                    <div class="feature">
+                        <h3> Inovace a věda</h3>
+                        <p>Neustále hledáme nové způsoby, jak zlepšit kvalitu služeb na základě nejnovějšího výzkumu.</p>
+                    </div>
+                </div>
+                <p class="section-text" style="margin-top: 60px;">Naši příspěvek mezi zdravotectvím a technologií je vyvíjení řešení, která skutečně pomohou lidem vrátit se k aktivnímu a kvalitnímu životu. Věříme, že správná kombinace péče a technologie může změnit životy.</p>
+            </div>
+        </section>
+
+        <!-- SECTION: Projekty -->
+        <section class="section section-grey" id="projekty">
+            <div class="container">
+                <h2 class="section-title">Projekty</h2>
+                <p class="section-text">Portfolio našich úspěšných projektů, které pomáhají lidem po celém světě.</p>
+                <div class="features features-column">
+                    <div class="feature">
+                        <h3>BrainCoach Software</h3>
+                        <p>Komplexní řešení pro neurorehabilitaci s interaktivními cvičeními určenými pro pacienty po mozkovém onemocnění a úrazech.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Web Design & Development</h3>
+                        <p>Moderní a responzivní webové stránky pro zdravotnická zařízení, kliniky a rehabilitační centra.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Konzultační služby</h3>
+                        <p>Odborné poradenství pro digitální transformaci zdravotnických služeb a implementaci nových technologií.</p>
+                    </div>
+                </div>
+                <p class="section-text" style="margin-top: 60px;">Všechny naše projekty jsou zaměřeny na jednu věc: zlepšit péči o pacienty a usnadnit jejich cestu k zotavení.</p>
+            </div>
+        </section>
+
+        <!-- SECTION: Reference -->
+        <section class="section" id="reference">
+            <div class="container">
+                <h2 class="section-title">Reference</h2>
+                <p class="section-text">Uslyšte příběhy od našich spokojeným klientů a pacientů, kteří se vrátili k aktivnímu životu díky našim programům.</p>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <p>"BrainCoach mi pomohl vrátit se do práce po úrazu. Cvičení jsou zábavná a výsledky jsou viditelné."</p>
+                        <cite>- Marie K., 45 let</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Skvělá metoda pro seniory. Moje babička se těší na každé cvičení a pociťuje viditelné zlepšení."</p>
+                        <cite>- Jan N., 60 let</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Byla jsem skeptická, ale výsledky mě překvapily. Program je opravdu dobře navržen a motivující."</p>
+                        <cite>- Petra L., 52 let</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: Kontakty -->
+        <section class="section section-grey" id="kontakty">
+            <div class="container">
+                <h2 class="section-title">Kontakt</h2>
+                <p class="section-text">Máte otázky nebo chcete vědět více o našich službách? Jsme tu pro vás a těšíme se na vaši zprávu!</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon-circle">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+                        </div>
+                        <h3>Adresa</h3>
+                        <p><strong>REHAMZA s.r.o.</strong><br>Havlíčkova 1053<br>537 01 Chrudim<br><br>IČ: 06530702<br>vedena u Krajského soudu v Hradci Králové sp.<br>zn. C 40430</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-circle">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </div>
+                        <h3>Ing. Pavel Čáp</h3>
+                        <p>jednatel společnosti<br><br>tel. <a href="tel:+420737326541">+420 737 326 541</a><br>e-mail: <a href="mailto:pavel.cap@rehamza.cz">pavel.cap@rehamza.cz</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-circle">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </div>
+                        <h3>Bc. Veronika Zďárská</h3>
+                        <p>odborný konzultant a zástupce pro obchod<br><br>tel. <a href="tel:+420773610892">+420 773 610 892</a><br>e-mail: <a href="mailto:veronika.zdarska@rehamza.cz">veronika.zdarska@rehamza.cz</a></p>
+                    </div>
+                </div>
+                <h3 style="font-size: 28px; font-weight: 700; margin-top: 60px; margin-bottom: 30px;">Napište nám zprávu</h3>
+                <form class="contact-form" action="https://formsubmit.co/pavel.cap@rehamza.cz" method="POST">
+                    <div class="form-group">
+                        <label for="name">Jméno *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Zpráva *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Odeslat zprávu</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>Všechna práva vyhrazena © 2025</p>
+                </div>
+                <div class="footer-center">
+                    <img src="rehamza logo.png" alt="Logo" class="footer-logo">
+                </div>
+                <div class="footer-right">
+                    <a href="https://www.facebook.com/SpolRehamza?mibextid=wwXIfr&rdid=aMMlQgyeJGCQFTr8&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F175mc3wrVq%2F%3Fmibextid%3DwwXIfr" target="_blank" class="social-icon facebook-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/rehamza_sro?igsh=MWtsdDU2c2Fudm80cA%3D%3D" target="_blank" class="social-icon instagram-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <rect x="2.15" y="2.15" width="19.7" height="19.7" rx="4.7" ry="4.7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="18.4" cy="5.6" r="0.9" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                const headerHeight = document.querySelector('.hlavicka').offsetHeight;
+                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = elementPosition - headerHeight - 20; // extra padding
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        function toggleMenu() {
+            document.querySelector('.menu').classList.toggle('open');
+            document.querySelector('.hamburger').classList.toggle('open');
+        }
+
+        // Zavři menu po kliknutí na libovolnou položku v menu (na mobilu)
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.menu a, .menu .kontakt-button, .menu .lang-link').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 900) {
+                        document.querySelector('.menu').classList.remove('open');
+                        document.querySelector('.hamburger').classList.remove('open');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
