@@ -17,11 +17,11 @@
         <span></span>
     </button>
     <nav class="menu">
-        <a href="javascript:void(0)" onclick="scrollToSection('uvod')">Úvod</a>
-        <a href="javascript:void(0)" onclick="scrollToSection('jak-to-funguje')">Jak to funguje</a>
-        <a href="javascript:void(0)" onclick="scrollToSection('o-nas')">O nás</a>
-        <a href="javascript:void(0)" onclick="scrollToSection('projekty')">Projekty</a>
-        <a href="javascript:void(0)" onclick="scrollToSection('reference')" style="color: #008f7a; text-decoration: none; font-weight: bold; font-family: Arial, sans-serif; padding-bottom: 5px; border-bottom: 2px solid transparent; transition: border-bottom 0.3s ease; line-height: 1.5; display: flex; align-items: center;">Reference</a>
+        <a href="#uvod">Úvod</a>
+        <a href="#jak-to-funguje">Jak to funguje</a>
+        <a href="#o-nas">O nás</a>
+        <a href="#projekty">Projekty</a>
+        <a href="#reference" style="color: #008f7a; text-decoration: none; font-weight: bold; font-family: Arial, sans-serif; padding-bottom: 5px; border-bottom: 2px solid transparent; transition: border-bottom 0.3s ease; line-height: 1.5; display: flex; align-items: center;">Reference</a>
         <a href="tel:+420737326541" class="phone-link">+420 737 326 541</a>
         <a href="javascript:void(0)" onclick="scrollToSection('kontakty')" class="kontakt-button">Kontakt</a>
         <div class="jazyky">
@@ -210,19 +210,6 @@
     </main>
 
     <script>
-        function scrollToSection(id) {
-            const element = document.getElementById(id);
-            if (element) {
-                const headerHeight = document.querySelector('.hlavicka').offsetHeight;
-                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-                const offsetPosition = elementPosition - headerHeight - 20; // extra padding
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        }
-
         function toggleMenu() {
             document.querySelector('.menu').classList.toggle('open');
             document.querySelector('.hamburger').classList.toggle('open');

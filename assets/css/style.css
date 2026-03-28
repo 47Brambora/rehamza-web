@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #jak-to-funguje .section-title {
     color: #E6943B;
     font-size: 64px;
