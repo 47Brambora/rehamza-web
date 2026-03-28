@@ -1,0 +1,820 @@
+  /**********************************/
+ /* This file is so broke and shit */
+/**********************************/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #dc9212;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#jak-to-funguje .section-title {
+    color: #E6943B;
+    font-size: 64px;
+}
+#projekty .section-title {
+    font-size: 64px;
+    color: #E6943B;
+}
+#jak-to-funguje .section-text,
+#jak-to-funguje .step,
+#jak-to-funguje .step *,
+#jak-to-funguje p,
+#jak-to-funguje li,
+#jak-to-funguje h3 {
+    color: #008f7a !important;
+}
+
+.hero {
+    color: #E6943B;
+}
+
+/* Barva písma v sekcích */
+.section-grey #jak-to-funguje {
+    color: #dc9212;
+}
+
+.section,
+.section-grey {
+    color: #008f7a;
+}
+
+/* Hlavička - základ */
+.hlavicka {
+    background-color: #ffffff;
+    height: 80px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px #0000001a;
+}
+
+/* Nastavení loga */
+.hlavicka .logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+/* Hlavní obsah */
+main {
+    margin-top: 80px;
+}
+
+/* Hero sekce */
+.hero {
+    background-color: #fff;
+    padding: 220px 50px 60px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.section-grey {
+    background-color: #f4f6f8;
+    color: #008f7a;
+}
+
+.hero-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 120px;
+    font-weight: 900;
+    line-height: 0.9;
+    color: #008f7a;
+    margin: 0 0 20px 0;
+    text-transform: none;
+    max-width: 800px;
+    -webkit-text-stroke: 3px #111;
+    paint-order: stroke fill;
+    text-align: center;
+}
+
+.hero-subtitle {
+    font-family: 'Arial', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+    color: #E6943B;
+    margin: 0 0 40px 0;
+    text-transform: none;
+    max-width: 800px;
+    -webkit-text-stroke: 2px #111;
+    paint-order: stroke fill;
+    text-align: center;
+}
+
+.hero-description {
+    font-size: 24px;
+    color: #008f7a;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* Sekce */
+.section {
+    padding: 150px 50px;
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section {
+    background-color: #fff;
+    color: #008f7a;
+}
+
+.section-grey {
+    background-color: #f4f6f8;
+    color: #008f7a;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0 0 30px 0;
+    text-align: center;
+    color: #008f7a;
+    -webkit-text-stroke: 2px #111;
+    paint-order: stroke fill;
+}
+
+.section-text {
+    font-size: 24px;
+    line-height: 1.6;
+    margin: 0 0 60px 0;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Features */
+/* Features default: grid, projekty: column */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.features-column {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.feature h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.feature p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Steps */
+/* Steps zarovnané vlevo, menší šířka */
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 420px;
+    gap: 32px;
+}
+
+.steps-left {
+    margin-left: 0;
+}
+
+.step {
+    text-align: left;
+}
+
+.step {
+    text-align: center;
+}
+
+.step h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.step p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Testimonials */
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+}
+
+.testimonial {
+    background-color: #ffffff1a;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.testimonial p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    font-style: italic;
+}
+
+.testimonial cite {
+    font-size: 16px;
+    font-weight: 700;
+    color: currentColor;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.footer-left {
+    justify-self: start;
+}
+
+.footer-left p {
+    margin: 0;
+    font-size: 14px;
+    color: #999;
+}
+
+.footer-center {
+    justify-self: center;
+}
+
+.footer-left, .footer-center, .footer-right {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.social-icon {
+    color: #E6943B;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #f7a440;
+}
+
+/* Kontaktní sekce */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin: 40px 0;
+}
+
+/* Kontakt ikony bez kruhu, oranžové */
+.contact-icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    color: #E6943B;
+    background: none;
+    width: auto;
+    height: auto;
+}
+
+.contact-icon-circle svg {
+    width: 32px;
+    height: 32px;
+    color: #008f7a !important;
+    fill: #008f7a !important;
+}
+
+.contact-item h3,
+.contact-item p strong,
+.contact-item .contact-title,
+.contact-item .contact-role {
+    color: #008f7a !important;
+}
+
+.contact-item h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    color: #008f7a;
+    text-align: center;
+}
+
+.contact-item p {
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.contact-item a {
+    color: #008f7a;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+    color: #008f7a;
+}
+
+/* Formulář */
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.form-group {
+    margin: 0 0 25px 0;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    border: 2px solid #008f7a;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.1);
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #008f7a;
+    background-color: rgba(255,255,255,0.15);
+}
+
+
+.submit-btn {
+    background-color: #008f7a;
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.submit-btn:hover {
+    background-color: #005e4d;
+    color: #fff;
+}
+
+/* Vzhled tlačítka Kontakt */
+.hlavicka nav a.kontakt-button {
+    background-color: #f7a440; /* Oranžová barva */
+    padding: 10px 20px;       
+    
+    /* Tady nastavíš zaoblení - zkus 25px pro efekt pilulky */
+    border-radius: 25px;      
+    
+    color: rgb(255, 255, 255);             
+    text-decoration: none;    /* Zajistí, že pod ním nebude podtržení */
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+/* 1. Nastavení kontejneru menu - vše do jedné řady */
+.hlavicka nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* 2. Odkazy v menu (O nás, Služby, Reference) */
+.hlavicka nav > a {
+    color: #008f7a;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+}
+
+.hlavicka nav > a:not(.kontakt-button):hover {
+    border-bottom: 2px solid #008f7a;
+}
+
+/* 3. Jazyky a oddělovač */
+.jazyky {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.5;
+}
+
+.lang-link {
+    color: #008f7a;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+.hlavicka nav a.kontakt-button {
+   background-color: #f7a440;
+    padding: 10px 20px;
+    border-radius: 25px;
+  color: #008f7a;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+#kontakty .contact-item h3 {
+    color: #008f7a !important;
+}
+
+#o-nas .section-title {
+    color: #E6943B;
+    font-size: 64px;
+}
+#reference .section-title {
+    color: #E6943B;
+    font-size: 64px;
+}
+
+/* --- HAMBURGER MENU A MOBILNÍ MENU --- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger span {
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin: 4px 0;
+  background: #008f7a;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    html, body {
+        font-size: 13px !important;
+    }
+
+    .hlavicka {
+        height: 44px;
+        min-height: 44px;
+        padding: 0 8px;
+    }
+
+    .hlavicka .logo img {
+        height: 28px;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .menu {
+        position: absolute;
+        top: 44px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 0 0 10px 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        display: none;
+        z-index: 1099;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    .menu > a, .menu .kontakt-button, .menu .lang-link, .menu .phone-link {
+        font-size: 15px !important;
+        padding: 10px 18px !important;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+        margin: 0;
+        display: block;
+    }
+
+    .jazyky {
+        padding: 10px 18px 0 18px;
+        font-size: 13px !important;
+    }
+}
+
+@media (max-width: 600px) {
+  html, body {
+    font-size: 11px !important;
+  }
+
+  .menu > a, .menu .kontakt-button, .menu .lang-link, .menu .phone-link {
+    font-size: 13px !important;
+    padding: 8px 12px !important;
+  }
+
+  .jazyky {
+    font-size: 11px !important;
+  }
+
+}
+
+/* Zmenšení textů v sekcích na mobilu */
+@media (max-width: 900px) {
+    .hero-title, .section-title {
+        font-size: 22px !important;
+        -webkit-text-stroke: 1px #111;
+        text-align: center !important;
+    }
+
+  .hero-subtitle {
+    font-size: 14px !important;
+  }
+
+    .hero-description, .section-text, .feature p, .step p, .testimonial p, .contact-item p {
+        font-size: 12px !important;
+        text-align: center !important;
+    }
+
+  .feature h3, .step h3, .contact-item h3 {
+    font-size: 15px !important;
+  }
+
+}
+@media (max-width: 600px) {
+  .hero-title, .section-title {
+    font-size: 16px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 11px !important;
+  }
+
+  .hero-description, .section-text, .feature p, .step p, .testimonial p, .contact-item p {
+    font-size: 10px !important;
+  }
+
+  .feature h3, .step h3, .contact-item h3 {
+    font-size: 12px !important;
+  }
+
+}
+
+/* --- Zmenšení hlavicky a loga na mobilu --- */
+@media (max-width: 900px) {
+  .hlavicka {
+    height: 36px;
+    min-height: 36px;
+    padding: 0 4px;
+  }
+
+  .hlavicka .logo img {
+    height: 20px;
+    max-width: 90px;
+  }
+
+  .footer-logo {
+    height: 24px !important;
+    max-width: 90px !important;
+    margin: 0 auto;
+    display: block;
+  }
+
+}
+@media (max-width: 600px) {
+  .hlavicka {
+    height: 28px;
+    min-height: 28px;
+    padding: 0 2px;
+  }
+
+  .hlavicka .logo img {
+    height: 14px;
+    max-width: 60px;
+  }
+
+  .footer-logo {
+    height: 16px !important;
+    max-width: 60px !important;
+  }
+
+}
+
+/* Zarovnání úvodního textu doleva */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Posune obsah k levému okraji */
+    text-align: left;        /* Zarovná text řádků doleva */
+    padding-left: 5%;       /* Mezera od levého okraje, aby to nebylo úplně nalepené */
+}
+
+.hero-title, 
+.hero-subtitle, 
+.hero-description {
+    margin-left: 0;          /* Resetuje případné centrování okrajů */
+    width: 100%;             /* Zajistí, že text využije prostor */
+    max-width: 800px;        /* Volitelné: aby text nebyl přes celou šířku monitoru a lépe se četl */
+}
+/* --- Úprava nadpisů v sekci Hero --- */
+
+/* Hlavní velký nadpis "BrainCoach" */
+.hero-title {
+    font-size: 150px; /* Zvětšeno z původní velikosti. Můžeš upravit dle potřeby. */
+    margin-bottom: 5px; /* Zmenšená mezera pod nadpisem pro lepší zarovnání */
+    /* Ujisti se, že zde není margin-left nebo padding-left */
+}
+
+/* Podnadpis "Když rehabilitace baví" */
+.hero-subtitle {
+    font-size: 55px; /* Také zvětšeno, ale méně než hlavní nadpis. */
+    
+    /* KLÍČOVÉ PRO ZAROVNÁNÍ: */
+    margin-left: -115px !important; /* Odstraní jakékoli levé odsazení */
+    padding-left: 0px !important; /* Odstraní jakékoli levé vnitřní odsazení */
+    
+    /* Vizuální doladění */
+    letter-spacing: -1px; /* Volitelné: mírně stáhne písmena k sobě pro lepší čitelnost ve velké velikosti */
+}
+
+/* Zajištění zarovnání celé sekce k levému okraji stránky */
+.hero {
+    align-items: flex-start; /* Zarovná obsah doleva v kontejneru */
+    /* Zkontroluj, zda máš padding-left na celé .hero sekci, aby text nebyl nalepený na kraji obrazovky, např: */
+    /* padding-left: 10%; */
+}
+/* --- Zarovnání popisu v sekci Hero doleva --- */
+
+.hero-description {
+    text-align: left !important; /* Natvrdo zarovná text v odstavci doleva */
+    max-width: 900px;           /* Volitelné: Omezí šířku, aby se řádky lépe četly */
+    margin-left: 10px;              /* Odstraní automatické centrovací okraje */
+    margin-right: auto;         /* V kombinaci s margin-left: 0 to posune kontejner doleva */
+    
+    /* Pokud chceš, aby byl text malinko odsazený od kraje obrazovky (vizuálně lépe čitelné), přidej toto: */
+    /* padding-left: 20px; */
+}
+/* --- Sjednocení EN verze --- */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Všechny bloky (h1, p) se zarovnají doleva */
+    text-align: left;        /* Samotný text uvnitř bloků bude vlevo */
+    padding-left: 5%;        /* Odsazení od kraje obrazovky */
+}
+
+.hero-title {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 55px;
+    margin-top: 0;
+    margin-left: 10px !important;
+    text-align: left;
+    max-width: 100%;         /* Zajistí, že se text nebude zalamovat zbytečně brzy */
+    line-height: 1.1;        /* Upraví mezery mezi řádky, pokud se text zalomí */
+}
+
+.hero-description {
+    font-size: 20px;         /* Velikost dlouhého textu */
+    text-align: left !important;
+    margin-left: 10px !important;
+    max-width: 800px;        /* Aby text nebyl přes celou obrazovku a lépe se četl */
+}
+/* --- Sjednocené zarovnání a velikost pro obě verze --- */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Všechny prvky se lepí na levou stranu */
+    padding-left: 3%;       /* Odsazení od levého okraje */
+}
+
+.hero-title {
+    font-size: 150px;         /* Nastav velikost, která ti vyhovuje */
+    margin: 0;
+    text-align: left;
+    }
+
+
+.hero-subtitle {
+    font-size: 50px;         /* Uprav poměr velikosti podle potřeby */
+    margin: 0;
+    text-align: left;
+    width: 100%;             /* Zajistí, že se text nerozbije do více řádků než je nutné */
+    max-width: 800px;        /* Omezí šířku bloku pro dobrou čitelnost */
+}
+
+.hero-description {
+    text-align: left;
+    margin-top: 15px;
+    max-width: 800px;
+}
